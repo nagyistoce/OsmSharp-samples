@@ -16,8 +16,8 @@ using OsmSharp.Routing.CH.Serialization.Sorted;
 using System.Reflection;
 using OsmSharp.Routing.Osm.Interpreter;
 using OsmSharp.Routing.CH;
-using OsmSharp.Routing.Graph.Router;
 using OsmSharp.Routing.CH.PreProcessing;
+using OsmSharp.Routing.Graph.Routing;
 
 namespace Android.Routing.Offline
 {
@@ -32,7 +32,7 @@ namespace Android.Routing.Offline
         {
             var routingSerializer = new CHEdgeDataDataSourceSerializer();
             _graph = routingSerializer.Deserialize(
-                Assembly.GetExecutingAssembly().GetManifestResourceStream(@"Android.Routing.Offline.kempen-big.contracted.mobile.routing"));
+                Assembly.GetExecutingAssembly().GetManifestResourceStream(@"Android.Routing.Offline.kempen-big.osm.pbf.contracted.mobile.routing"));
         }
 
         /// <summary>
