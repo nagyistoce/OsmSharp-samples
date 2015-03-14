@@ -85,7 +85,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\OsmSharpTestFiles\mbtiles\kempen.mbtiles">
+    <EmbeddedResource Include="..\..\..\OsmSharpTestFiles\mbtiles\kempen.mbtiles">
       <Link>kempen.mbtiles</Link>
     </EmbeddedResource>
     <None Include="app.config" />
