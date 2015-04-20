@@ -8,4 +8,4 @@ OUTPUT:
 * CSV-file with lat-lon and other info BUT sorted along shortest path.
 * GPX-file with the route along all points in the CSV-file.
  
-To run this sample you need to setup the [OsmSharp routing service](https://github.com/OsmSharp/OsmSharp.Service.Routing) with the antwerpen.osm.pbf in this folder and use the configuration file antwerpen.config.
+To run this sample you need to setup the [OsmSharp routing service](https://github.com/OsmSharp/OsmSharp.Service.Routing) with the antwerp.osm.pbf in this folder and use the configuration file antwerp.config.
