@@ -33,8 +33,8 @@ namespace OsmSharp.CalculateMatrix
             OsmSharp.Logging.Log.TraceEvent("Program", Logging.TraceEventType.Information, "Deserializing routing graph...");
             TagsCollectionBase metaTags;
             var serializer = new OsmSharp.Routing.CH.Serialization.CHEdgeFlatfileSerializer();
-            var graph = serializer.Deserialize(
-                Assembly.GetExecutingAssembly().GetManifestResourceStream("OsmSharp.CalculateMatrix.kempen-big.contracted.flat.routing"), out metaTags, false);
+            var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("OsmSharp.CalculateMatrix.kempen-big.osm.pbf.contracted.flat.routing");
+            var graph = serializer.Deserialize(stream, out metaTags, false);
 
             // create router from file and define vehicle profile.
             var vehicle = Vehicle.Car;
